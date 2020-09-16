@@ -29,10 +29,12 @@ private static final long serialVersionUID = 1L;
 	private String title;
 	private Platform platform;
 	
+	
 	@ManyToOne
 	@JoinColumn(name= "genre_id")
 	private Genre genre;
 	
+
 	@OneToMany(mappedBy = "game")
 	private List<Record> records = new ArrayList<>();
 	
