@@ -22,7 +22,7 @@ public class GameDTO implements Serializable{
 		 platform= entity.getPlatform();
 	 }
 	 
-	public GameDTO(Long id, String name, Platform platform) {
+	public GameDTO(Long id, String name, Platform platform, String title) {
 		super();
 		this.id = id;
 		this.title = title;
